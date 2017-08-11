@@ -21,10 +21,9 @@
       usernameStyle: 'email',
       defaultDatabaseConnection: 'acme',
       prefill: {
-        email: 'johnfoo@gmail.com',
-        phoneNumber: '48991721214'
+        email: 'johnfoo@gmail.com'
       },
-      passwordlessMethod: 'link'
+      passwordlessMethod: 'code'
     };
 
     const lock = new Auth0LockPasswordless(cid, domain, options);

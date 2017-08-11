@@ -87,7 +87,7 @@ class Auth0APIClient {
   }
 
   passwordlessVerify(options, authParams, cb) {
-    this.client.passwordlessVerify(options, err => cb(normalizeError(err)));
+    this.client.passwordlessLogin(options, err => cb(normalizeError(err)));
   }
 
   parseHash(hash = '', cb) {
